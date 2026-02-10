@@ -291,7 +291,7 @@
                 <div class="row align-items-center">
                     <!-- <div class="col-12 col-lg-6 d-flex"> -->
                     <img src="./TACO_LOGO.png" width="25%" />
-                    <a class="site-logo" style="margin-left: 400px;">
+                    <a class="site-logo" style="margin-left: 240px;">
                         <div style="font-size: 60px; font-weight: bold;">
                             <b style="color: rgb(150, 0, 0)"></b>飞行智能社区
                         </div>
@@ -403,785 +403,102 @@
         </div>
     </div>
 
-    <!-- Fingerprint Section -->
-    <div class="site-section" style="background: #f8f9fa; padding: 60px 0;">
+    <!-- Minimal Recent Works section (only this kept below carousel) -->
+    <div class="site-section" style="padding: 40px 0;">
         <div class="container">
-            <div class="section-title" style="margin-bottom:30px; text-align: center;">
-                <h2>Fingerprint</h2>
+            <div class="section-title" style="margin-bottom:20px; text-align:center;">
+                <h2>近期科研成果</h2>
             </div>
-            <div class="research-charts-wrapper">
-                <div class="research-charts-subtitle" style="text-align: center; margin-bottom: 30px;">Research
-                    direction distribution - Percentage of research focus in each direction</div>
-                <div class="research-charts-grid">
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-ad"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Autonomous Driving</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-mlm"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Multimodal AI & LLMs</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
+            <div style="max-width:900px; margin:0 auto; color:rgb(68,68,68);">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="https://via.placeholder.com/800x200?text=Paper+1"
+                                alt="UAVs meet LLMs Paper" style="height: 200px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title"><a
+                                        href="https://www.sciencedirect.com/science/article/pii/S1566253525002313"
+                                        target="_blank">UAVs meet LLMs: Overviews and perspectives towards agentic
+                                        low-altitude mobility</a></h5>
+                                <p class="card-text small text-muted mb-0">Yonglin Tian, Fei Lin, Yiduo Li, Tengchao
+                                    Zhang, Qiyao Zhang, Xuan Fu, Jun Huang, Xingyuan Dai, Yutong Wang, Chunwei Tian, Bai
+                                    Li, Yisheng Lv, Levente Kovács, Fei-Yue Wang</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-gm"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Generative Models</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-vqa"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Video Quality Assessment</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="files/images/CogRail.png" alt="CogRail Paper"
+                                style="height: 350px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title"><a href="https://arxiv.org/abs/2601.09613"
+                                        target="_blank">CogRail: Benchmarking VLMs in Cognitive Intrusion Perception for
+                                        Intelligent Railway Transportation Systems</a></h5>
+                                <p class="card-text small text-muted mb-0">Yonglin Tian, Qiyao Zhang, Wei Xu, Yutong
+                                    Wang, Yihao Wu, Xinyi Li, Xingyuan Dai, Hui Zhang, Zhiyong Cui, Baoqing Guo, Zujun
+                                    Yu, Yisheng Lv</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-eai"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Embodied AI</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-other"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Other Research</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card h-100 shadow-sm">
+                            <img class="card-img-top" src="files/images/AIR-VLA.png" alt="AIR-VLA Paper"
+                                style="height: 350px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title"><a href="https://arxiv.org/abs/2601.21602"
+                                        target="_blank">AIR-VLA: Vision-Language-Action Systems for Aerial
+                                        Manipulation</a></h5>
+                                <p class="card-text small text-muted mb-0">Jianli Sun, Bin Tian, Qiyao Zhang, Chengxiang
+                                    Li, Zihan Song, Zhiyong Cui, Yisheng Lv, Yonglin Tian</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Shared Dropdown Container -->
-                <div id="researchDropdownContainer" class="research-dropdown-container"></div>
+            </div>
+        </div>
+
+        <!-- 历史条目已替换为占位格式，便于后续改写 -->
+        <div style="max-width:900px; margin:10px auto; color:rgb(68,68,68);">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><a href="#" target="_blank">论文1</a><br></h5>
+                            <p class="card-text small text-muted mb-0">作者1，作者2，作者3，作者4，作者5，作者6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><a href="#" target="_blank">论文2</a></h5>
+                            <p class="card-text small text-muted mb-0">作者2，作者3，作者4，作者5，作者6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><a href="#" target="_blank">论文3</a></h5>
+                            <p class="card-text small text-muted mb-0">作者1，作者2，作者3，作者4，作者5，作者6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title" style="margin-bottom:20px">
+            <h2>Sponsor</h2>
+        </div>
+    </div>
+    <div class="trend-entry d-flex">
+        <div class="row justify-content-md-center">
+            <div>
+                <img src="./TACO_Sponsor.png" width="100%" />
             </div>
         </div>
     </div>
-
-    <div class="site-section">
-
-        <div class="container">
-            <div class="row">
-                <!-- Left Column -->
-                <div class="col-md-7">
-                    <!-- Faculty Section -->
-                    <div class="section-title" style="margin-bottom:20px">
-                        <h2>Faculty</h2>
-                    </div>
-                    <div class="d-flex" style="margin-bottom: 10px;">
-                        <img class="avatar" src="./groups/headshot.png"
-                            style="width: 30%; height: 30%; margin-right: 20px;" />
-                        <p style="flex: 1;">
-                            <b style="color:rgb(85, 85, 85)">
-                                Dr. <a href="https://vztu.github.io/">Zhengzhong Tu</a> is currently an Assistant
-                                Professor in the <a href="https://engineering.tamu.edu/cse/index.html">Department of
-                                    Computer Science and Engineering</a> at <a href="https://www.tamu.edu/">Texas A&M
-                                    University</a>, College Station, TX, USA.<br>
-                                He is the director of the Trustworthy, Autonomous, Human-Centered, and Embodied
-                                Intelligence Group <a href="https://taco-group.github.io">(TACO-Group)</a> at TAMU.
-                                <br> Contact: tzz [AT] tamu [.] edu
-
-                            </b>
-                        </p>
-                    </div>
-
-                    <!-- Social Media Icons -->
-                    <div style="margin-bottom: 20px;">
-                        <a href="https://www.linkedin.com/in/zhengzhong-tu" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=9ajdZaEAAAAJ" target="_blank"
-                            class="social-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="https://github.com/vztu" target="_blank" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://twitter.com/_vztu" target="_blank" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/c/UC3vY9kHwhAxxmVaqkV-cvwA" target="_blank"
-                            class="social-icon">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <!--                    <a href="https://www.xiaohongshu.com/user/profile" target="_blank" class="social-icon">-->
-                        <!--                        <i class="fab fa-xiaohongshu"></i>-->
-                        <!--                    </a>-->
-                        <a href="https://www.researchgate.net/profile/Zhengzhong_Tu" target="_blank"
-                            class="social-icon">
-                            <i class="fab fa-researchgate"></i>
-                        </a>
-                        <!--                    <a href="https://dblp.org/pid/your-id" target="_blank" class="social-icon">-->
-                        <!--                        <i class="fab fa-dblp"></i>-->
-                        <!--                    </a>-->
-                    </div>
-
-                    <!-- Research Interest Section -->
-                    <div class="section-title" style="margin-bottom:20px">
-                        <h2>Headline</h2>
-                    </div>
-                    <b style="color:rgb(68, 68, 68)">
-                        <i>
-                            <!-- If you are here to seek "TL;DR"...</i></b>-->
-                            <ul style="margin-bottom:5px">
-                                <!-- <li><b style="color:rgb(71, 71, 71)">Question</b>: what should I read, if I just want to have a very quick glance at what ScopeX lab is currently focusing on? </li>-->
-                                <li>
-                                    <!-- <b style="color:rgb(85, 85, 85)">Answer</b>: -->
-                                    Prof. Tu has broad research interests spanning from trustworthy machine learning,
-                                    multimodal and generative AI, autonomous driving systems, to embodied AI, machine
-                                    learning system. We pick the following papers that represent our recent flavors. The
-                                    list will change over time:
-                                    <ul>
-                                        <li><a href="https://arxiv.org/abs/2507.07105">[Multimodal Agents for
-                                                Vision-Centric Tasks, NeurIPS 2025]</a></li>
-                                        <li><a href="https://arxiv.org/abs/2406.13527">[High-Res Video Generation, ICLR
-                                                2025]</a></li>
-                                        <li><a href="https://arxiv.org/abs/2501.18616">[Scalable & Secure V2X Systems,
-                                                ICLR 2025]</a></li>
-                                        <li><a href="">[VLM Post-Training Alignment, EMNLP 2025]</a></li>
-                                        <!--                                <li><a href="https://arxiv.org/abs/2412.15208">[E2E VLMs for Autonomous Driving, WACV 2025]</a></li>-->
-                                        <li><a href="https://arxiv.org/abs/2412.15206">[Trustworthy VLMs for Autonomous
-                                                Driving, Arxiv 2024]</a></li>
-                                        <li><a href="https://arxiv.org/abs/2312.11595">[Language-driven Image Editing,
-                                                ECCV 2024]</a></li>
-                                        <li><a href="https://arxiv.org/abs/2310.01407">[Conditional Diffusion
-                                                Distillation, CVPR 2024]</a></li>
-                                        <!--                                <li><a href="https://arxiv.org/abs/2404.04804">[Robust Vision for Autonomous Driving, CVPR 2024]</a></li>-->
-                                        <!--                                <li><a href="https://arxiv.org/abs/2203.10638">[V2X Cooperative Perception, V2X-ViT, ECCV 2022]</a></li>-->
-                                        <!--                                <li><a href="https://arxiv.org/abs/2204.01697">[Efficient Transformer Design, MaxViT, ECCV 2022]</a></li>-->
-                                    </ul>
-                                </li>
-                                Please check the <a href="./research.html">Research</a> tab for details of research in
-                                our lab.
-                                <!-- <li><b style="color:rgb(71, 71, 71)">[New]</b>: Since April 2023, a group of VITA students volunteer to run a group twitter page together (opinions on students' own): <a href="https://twitter.com/VITAGroupUT?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @VITAGroupUT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" data-size="large"></script> <p> -->
-                                <a class="github-button" href="https://github.com/taco-group"
-                                    aria-label="Follow @TACO-Group on GitHub">Follow @TACO-Group</a>
-                                <script async defer src="https://buttons.github.io/buttons.js"></script>
-                            </ul>
-                        </i>
-                    </b>
-                    <!--            <br>-->
-                    <h5>
-                        <strong style="color: red;">
-                            &#x1F6A7
-                            I am looking for highly motivated students, in terms of RA / TA / internship / visiting
-                            students.
-                            Interested candidates are strongly encouraged to contact me by email: tzzhire[AT]gmail[.]com
-                            or fill out the <a href="https://tinyurl.com/zhvvm85y">Google forms</a>.
-                            Check out more detailed <a href="https://vztu.github.io/"
-                                style="color:rgb(200, 0, 0)">here</a>.
-                        </strong>
-                    </h5>
-                </div>
-
-                <!-- Right Column -->
-                <div class="col-md-5">
-                    <h2>Tweets</h2>
-                    <a class="twitter-timeline" data-width="100%" data-height="800" data-theme="light"
-                        href="https://twitter.com/_vztu?ref_src=twsrc%5Etfw">Tweets by _vztu</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!--                    <h5><strong><em><a href="./prospective_students.html" style="color:rgb(140, 29, 64)">Multiple-->
-        <!--                                    Research Assistant Positions Available</a></em></strong></h5>-->
-
-        <div class="container">
-            <div class="row">
-                <div class="section-title" style="margin-bottom:20px">
-                    <h2>PI & Research Interest</h2>
-                </div>
-                <p>Dr. Tu received his Ph.D. degree under the supervision of Prof. <a
-                        href="https://www.ece.utexas.edu/people/faculty/alan-bovik">Alan C. Bovik</a> in Electrical and
-                    Computer Engineering from <a href="https://www.utexas.edu/">The University of Texas at
-                        Austin</a>, Austin, TX, USA, in 2022 Summer. Afterward, he worked at Google Research on
-                    computational imaging and generative models.
-                    He has been involved in multiple product through interning at Google Research, Pixel Camera, and
-                    YouTube team.
-                    Dr. Tu has authored 30+ peer-reviewed international journal/conference papers in related areas. He
-                    has received Best Paper Nomination Award at CVPR 2022, won the First Place at the AI4Streaming Video
-                    Quality Challenge held at CVPR 2024, been acknowledged with highlights in Google Research's Annual
-                    Blog, and featuring in Google I/O media outlets. He served as technical reviewers for over 18+
-                    international journals/conferences, such as IEEE
-                    TPAMI, IJCV, TIP, TCSVT, TMM, TCI, TSTSP, RA-Letters, IROS, ICRA, NeurIPS, ICLR, ICML, CVPR, ICCV,
-                    ECCV, WACV,
-                    ICIP, VCIP, ISCAS, etc.
-                </p>
-
-                Our group at Texas A&M University strives to explore cutting-edge generative and multimodal AI
-                technologies, including
-                core data generation, modeling, and alignment, as well as their domain-specific adaptations on
-                real-world applications, such as
-                autonomous vehicles/mobility, robotics, and healthcare.
-                <!--        We group our research themes into the above categories (note that they may or-->
-                <!--        may not be adjusted according to our ongoing research activities):-->
-
-                <!--                    <h4>Theme 1: Multimodal Large Language Models</h4>-->
-                <!--                        -->
-
-
-                <!--                    <h4>Theme 2: Autonomous Driving</h4>-->
-
-
-
-                <!--                    <h4>Theme 3: Perceptual Modeling</h4>-->
-
-                <div class="section-title" style="margin-bottom:20px">
-                    <h2>News</h2>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="trend-contents">
-
-                        <b style="color:rgb(40, 40, 40)">[Jan 2026]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>2x ICRA 2026 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://arxiv.org/abs/2510.19250">
-                                        Background Fades, Foreground Leads: Curriculum-Guided Background Pruning for
-                                        Efficient Foreground-Centric Collaborative Perception
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2505.07868">
-                                        VISTA: Generative Visual Imagination for Vision-and-Language Navigation
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>5x ICLR 2026 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://arxiv.org/abs/2503.11892">
-                                        DecAlign: Hierarchical Cross-Modal Alignment for Decoupled Multimodal
-                                        Representation Learning
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2510.01278">
-                                        Noisy-Pair Robust Representation Alignment for Positive-Unlabeled Learning
-                                    </a>
-                                </li>
-                                <li>
-                                    FASA: FREQUENCY-AWARE SPARSE ATTENTION
-                                </li>
-                                <li>
-                                    <a href="https://www.arxiv.org/abs/2512.00752">
-                                        Charts Are Not Images: On the Challenges of Scientific Chart Editing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2502.14296">
-                                        TrustGen: A Platform of Dynamic Benchmarking on the Trustworthiness of
-                                        Generative Foundation Models
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>1x EACL 2026 (Main Track) accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://hal.science/hal-05217179/">
-                                        A Survey on LLM-based Conversational User Simulation
-                                    </a>
-                                </li>
-                            </ul>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Dec 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>4x CVPR 2026 Workshop Proposals accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://vidgen-bench-eval.github.io">
-                                        [1st VGEB] The 1st Workshop on Video Generative Models: Benchmarks and
-                                        Evaluation
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://coop-intelligence.github.io">
-                                        [3rd MEIS] The 3rd Workshop on Multi-Agent Embodied Intelligent Systems Meet
-                                        Generative-AI Era: Opportunities, Challenges and Futures
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://e2e3d.github.io">
-                                        [2nd E2E3D] The 2nd Workshop on End-to-End 3D Learning
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://drivex-workshop.github.io">
-                                        [4th DriveX] The 4th Workshop on Foundation Models for V2X-based Cooperative
-                                        Autonomous Driving
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu will serve as Publicity Chair for CVPR 2026!</li>
-                            <li>Dr. Tu will serve as Area Chair for ICML 2026 and CVPR 2026!</li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Nov 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li><a href="/TRB2026.png">10x TRB 2026 (Poster Presentations) Accepted!</a></li>
-                            <li>CyPortQA was selected as Oral Presentation. Cheers!</li>
-                        </ul>
-
-
-                        <b style="color:rgb(40, 40, 40)">[Oct 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>2x AAAI 2026 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://arxiv.org/abs/2508.15846">
-                                        （AISI Track) CyPortQA: Benchmarking Multimodal Large Language Models for Cyclone
-                                        Preparedness in Port Operation
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        （Demo Track) DreamLand: Real-Time Interactive 4D Scene Generation
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <li>1x TMLR'2025 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://github.com/taco-group/AutoTrust">
-                                        AutoTrust: Benchmarking Trustworthiness in Large Vision Language Models for
-                                        Autonomous Driving
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu gives keynote talks at 2COOOL and X-Sense workshop with ICCV 2025.</li>
-                            <li>Dr. Tu gave an invited talk at UC Merced.</li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Sep 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu was selected in the <a
-                                    ref="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/8">Stanford/Elsevier
-                                    Top 2% Scientists List 2025!</a></li>
-                            <li>2x NeurIPS'2025 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://4kagent.github.io">
-                                        4KAgent: agentic any image to 4K super-resolution
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2505.12366">
-                                        DisCO: Reinforcing Large Reasoning Models with Discriminative Constrained
-                                        Optimization
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Grateful to receive the 2025 Nvidia Academic Grant Award! </li>
-                            <li>Dr. Tu gave multiple invited talks at GMU, UMD, and UDel </li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Aug 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu will serve as Area Chair for ICLR 2026!</li>
-                            <li>1x EMNLP'2025 (Main Track) accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://github.com/taco-group/Re-Align">
-                                        Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct
-                                        Preference Optimization
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu gave an invited talk at Meta!</li>
-                            <li>Dr. Tu gave an invited talk at Berkeley Agentic AI Summit!</li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[July 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu joins the <a ref="https://vqeg.org/vqeg-home/">Video Quality Expert Group
-                                    (VQEG)</a> board as a co-chair in Subjective and objective assessment of GenAI
-                                content (SOGAI)
-                            </li>
-                            <li>Dr. Tu starts to serve as Associate Editor for the prestigious IEEE Transactions on
-                                Image Processing!</li>
-                        </ul>
-
-
-                        <b style="color:rgb(40, 40, 40)">[June 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu will serve as AC for WACV 2026! See you again in Tuscon, AZ!</li>
-                            <li>2x IROS'2025 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://taco-group.github.io/CoMamba/">
-                                        CoMamba: Real-time Cooperative Perception Unlocked with State Space Models
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2503.13504">
-                                        CoCMT: Communication-Efficient Cross-Modal Transformer for Collaborative
-                                        Perception
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu will attend CVPR 2025 in Nashville TN!</li>
-                            <li>Dr. Tu will co-organize the CVPR 2025 Workshop on Distillation of Foundation Models for
-                                Autonomous Driving</li>
-                            <li>Dr. Tu will co-organize the CVPR 2025 MetaFood Workshop.</li>
-                            <li>Dr. Tu will give an invited talk at Google XR at Mountain View, CA!</li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[May 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu will attend ICRA 2025 in Atlanta, GA!</li>
-                            <li>Dr. Tu will attend VQEG 2025 Meeting hosted by Meta in Menlo Park, CA!</li>
-                            <li>Dr. Tu will give an invited talk at UC Davis!</li>
-                            <li>Dr. Tu gave an invited talk at Samsung Research America (SRA) in Dallas!</li>
-                            <li>0x ICML'2025 accepted. No xixi :(</li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Apr 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Our team (TACO-SR) has won the 1st place on the NTIRE 2025 Challnege on Short-Form UGC
-                                Video Quality Assessment and Enhancement (Track 2: KwaiSR)!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://arxiv.org/abs/2504.13131">
-                                        NTIRE 2025 Challenge on Short-form UGC Video Quality Assessment and Enhancement:
-                                        Methods and Results
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu will serve as an Area Chair for NeurIPS 2025, at your service!</li>
-                            <li>Dr. Tu will serve as an Area Chair for WDFM-AD workshop with CVPR 2025!</li>
-                            <li>Dr. Tu will co-organize the 2nd MetaFood Workshop with CVPR 2025! Welcome to participate
-                                our challenge:</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a
-                                        href="https://www.kaggle.com/competitions/3d-reconstruction-from-monocular-multi-food-images">
-                                        3D Reconstruction from Monocular Multi-Food Images.
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu gave an invited talk at Param-Intelligence (π) seminar talk at WPI.</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7315758389450465281/">
-                                        Advancing Cooperative Perception Systems in Real-World Deployment: Challenges,
-                                        Solutions, and Frontiers
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu attended WACV'2025 in Tuscon, AZ</li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Mar 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu gave an invited talk at AI Seminar at ASU.</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7315758389450465281/">
-                                        Advancing Cooperative Perception Systems in Real-World Deployment: Challenges,
-                                        Solutions, and Frontiers
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>Dr. Tu attended WACV'2025 in Tuscon, AZ</li>
-                            <li>Dr. Tu co-organized the 3rd Workshop on Large Language and Vision Models for Autonomous
-                                Driving (LLVM-AD) with WACV'2025 in Tuscon, AZ.</li>
-                        </ul>
-
-
-                        <b style="color:rgb(40, 40, 40)">[Feb 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu gave an invited talk at Ethical and Explainable GeoAI Workshop held by TAMIDS.
-                            </li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a>
-                                        Towards Scalable, Trustworthy, and End-to-End Collaborative Driving
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>3x CVPR'2025 (1x Highlight) accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://github.com/lili0415/DPU-OOD-Detection">
-                                        [Highlight] DPU: Dynamic prototype updating for multimodal out-of-distribution
-                                        detection
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2411.16832">
-                                        Edit Away and My Face Will not Stay: Personal Biometric Defense against
-                                        Malicious Generative Editing
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2412.04852">
-                                        SleeperMark: Towards Robust Watermark against Fine-Tuning Text-to-image
-                                        Diffusion Models
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>1x ICRA'2025 accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://arxiv.org/abs/2403.11371">
-                                        V2X-DGW: Domain Generalization for Multi-agent Perception under Adverse Weather
-                                        Conditions
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Jan 2025]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>We welcome Xiangbo Gao to join the TACO group!</li>
-                            <li>2x ICLR'2025 (1x Spotlight) accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://4k4dgen.github.io/">
-                                        [Spotlight] 4k4dgen: Panoramic 4d generation at 4k resolution
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://openreview.net/forum?id=8NdNniulYE">
-                                        STAMP: Scalable Task- And Model-agnostic Collaborative Perception
-                                    </a>
-                                </li>
-                            </ul>
-                            <li>2x WACV'2025 workshop accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="https://github.com/taco-group/OpenEMMA">
-                                        OpenEMMA: Open-Source Multimodal Model for End-to-End Autonomous Driving
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://arxiv.org/abs/2501.05631">
-                                        HFMF: Hierarchical Fusion Meets Multi-Stream Models for Deepfake Detection
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <!--                                <li>We're grateful to receive the TAMU catapult Seed Grant (FY2025)!</li>-->
-                            <li>Dr. Tu attended Transportation Research Board (TRB) Annual Meeting at Washing D.C.</li>
-                        </ul>
-
-
-                        <b style="color:rgb(40, 40, 40)">[Dec 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu will serve as an Area Chair for ICCV2025, at your service! </li>
-                            <!--                                <li>We're grateful to receive the TAMIDS Seed Program for AI, Computing, and Data Science (SPAICD) award!</li>-->
-                        </ul>
-
-
-
-                        <b style="color:rgb(40, 40, 40)">[Nov 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>1x IEEE TIP accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="">
-                                        MWFormer: Multi-Weather Image Restoration Using Degradation-Aware Transformers.
-                                    </a>
-                                </li>
-                            </ul>
-                        </ul>
-                        <ul style="margin-bottom:5px">
-                            <li>1x TMLR accepted. Cheers!</li>
-                            <ul style="margin-bottom:5px">
-                                <li>
-                                    <a href="">
-                                        Bigger is not Always Better: Scaling Properties of Latent Diffusion Models
-                                    </a>
-                                </li>
-                            </ul>
-                        </ul>
-
-
-                        <b style="color:rgb(40, 40, 40)">[Oct 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>Dr. Tu visited DARPA DSO Day, MIT, and Boston University.</li>
-                            <!--                                <li>We're grateful to receive the eBay research award!</li>-->
-                        </ul>
-
-
-                        <b style="color:rgb(40, 40, 40)">[Sep 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>We welcome Xing Shuo and Renjie Li to join TACO group!
-                                <!--                                <li>We're grateful to receive the Snap research award!</li>-->
-                                <!--                                <li>We're grateful to receive the Topaz Labs research award!</li>-->
-                            <li>1x IEEE TPAMI accepted. Cheers!
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a href="">
-                                            V2X-ViTv2: Improved Vision Transformers for Vehicle-to-Everything
-                                            Cooperative Perception
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>1x NeurIPS'24 (DB& Track) accepted. Cheers!
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a href="">
-                                            OpenCDA-∞: A Closed-loop Benchmarking Platform for End-to-end Evaluation of
-                                            Cooperative Perception
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>Dr. Tu, with his crew, visited Rice CS and gave an invited talk on diffusion models and
-                                generative AI.
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a
-                                            href="https://www.linkedin.com/feed/update/urn:li:activity:7241921629151248384/">
-                                            Democratizing Diffusion Models for Controllable & Efficient Computational
-                                            Imaging
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Dr. Tu gave an invited talk at SPS Webinar Series.
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a
-                                            href="https://signalprocessingsociety.org/blog/sps-webinar-rapid-accurate-and-explainable-video-quality-assessment-user-generated-content">
-                                            SPS Webinar: Rapid, Accurate, and Explainable Video Quality Assessment for
-                                            User-Generated Content
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[Aug 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>We won the 3rd place in the <a
-                                    href="https://challenges.videoprocessing.ai/challenges/compressed-video-quality-assessment.html">AIM
-                                    2024 Challenge</a> (Compressed Video Quality Assessment Track)
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a href="https://arxiv.org/abs/2408.11982">
-                                            AIM 2024 Challenge on Compressed Video Quality Assessment: Methods and
-                                            Results
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Dr. Tu visited NYU, Columbia University.
-                            </li>
-                        </ul>
-
-                        <b style="color:rgb(40, 40, 40)">[July 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>
-                                Dr. Tu was invited to an AI coffee chat by Dr. Zhang from <a
-                                    ref="https://www.linkedin.com/posts/activity-7222707319439081472-vYxM/?utm_source=share&utm_medium=member_desktop">Expresso
-                                    Labs</a>
-                            </li>
-                            <li>Our book chapter about Quality Assessment has been published.
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a
-                                            href="https://books.google.com/books?hl=en&lr=&id=s6cLEQAAQBAJ&oi=fnd&pg=PA239&dq=info:QxaD8HQM4Q0J:scholar.google.com&ots=pt7G_1vl1y&sig=cCVtRNT9WnwA1auJO-RxAtflp8E#v=onepage&q&f=false">
-                                            "Quality Assessment in Media and Entertainment: Challenges and Trends" in
-                                            Computer Vision: Challenges, Trends, and Opportunities
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>1x ECCV'24 accepted. Cheers!
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a href="https://arxiv.org/abs/2312.11595">
-                                            SPIRE: Semantic Prompt-Driven Image Restoration
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Dr. Tu gave a talk on COVER (<a
-                                    href="https://docs.google.com/presentation/d/18AcozoBEGj1l6qMTBxu0DoxCMin9JkeUMoSOHWP02jE/edit?usp=sharing">Slides</a>)
-                                at <a href="https://vqeg.org/meetings-home/">Video Quality Expert Group (VQEG)
-                                    Meeting</a>
-                            </li>
-                        </ul>
-                        <b style="color:rgb(40, 40, 40)">[Jun 2024]</b>
-                        <ul style="margin-bottom:5px">
-                            <li>2x CVPR'24 accepted. Cheers!
-                                <ul style="margin-bottom:5px">
-                                    <li>
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2024/html/Mei_CoDi_Conditional_Diffusion_Distillation_for_Higher-Fidelity_and_Faster_Image_Generation_CVPR_2024_paper.html">CoDi:
-                                            Conditional Diffusion Distillation for Higher-Fidelity and Faster Image
-                                            Generation</a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2024/html/Li_Light_the_Night_A_Multi-Condition_Diffusion_Framework_for_Unpaired_Low-Light_CVPR_2024_paper.html">Light
-                                            the Night: A Multi-Condition Diffusion Framework for Unpaired Low-Light
-                                            Enhancement in Autonomous Driving</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>We won the 1st place in the <a
-                                    href="https://ai4streaming-workshop.github.io/">AI4Streaming workshop</a> (UGC Video
-                                Quality Assessment). <a href="https://arxiv.org/abs/2404.16205v1">[Challenge Report]</a>
-                                <ul style="margin-bottom:5px">
-                                    <lOuri>
-                                        <a
-                                            href="https://openaccess.thecvf.com/content/CVPR2024W/AI4Streaming/html/He_COVER_A_Comprehensive_Video_Quality_Evaluator_CVPRW_2024_paper.html">COVER:
-                                            A Comprehensive Video Quality Evaluator</a>
-                                    </lOuri>
-                                </ul>
-                            </li>
-                            <li> Our book chapter <i>
-                                    Quality Assessment in Media and Entertainment: Challenges and Trends
-                                </i> in Computer Vision: Challenges, Trends, and Opportunities has been
-                                <a
-                                    href="https://books.google.com/books?hl=en&lr=&id=s6cLEQAAQBAJ&oi=fnd&pg=PA239&dq=info:QxaD8HQM4Q0J:scholar.google.com&ots=pt7A03qq6A&sig=6s98Q2SqHNCJdupN0de5QRuwhdg#v=onepage&q&f=false">Published.</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="section-title" style="margin-bottom:20px">
-                    <h2>Sponsor</h2>
-                </div>
-            </div>
-            <div class="trend-entry d-flex">
-                <div class="row justify-content-md-center">
-                    <div>
-                        <img src="./TACO_Sponsor.png" width="100%" />
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
     </div>
 
