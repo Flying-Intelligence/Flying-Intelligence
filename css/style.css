@@ -1,3 +1,39 @@
+.site-navbar .site-navigation .site-menu > li.active > a {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+/* 导航栏悬浮动效和立体感 */
+.site-navbar .site-navigation .site-menu > li > a {
+  transition: box-shadow 0.25s, transform 0.25s, background 0.25s, color 0.25s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  font-weight: 500;
+  padding: 8px 22px;
+  background: linear-gradient(90deg, #f8fafc 60%, #e3e6ee 100%);
+  color: #333;
+}
+.site-navbar .site-navigation .site-menu > li > a:hover,
+.site-navbar .site-navigation .site-menu > li > a:focus {
+  box-shadow: 0 10px 32px rgba(80,120,200,0.18), 0 2px 12px rgba(0,0,0,0.12);
+  transform: translateY(-3px) scale(1.06);
+  background: linear-gradient(90deg, #e3e6ee 0%, #f8fafc 100%);
+  color: #0056b3 !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+/* 论文卡片立体感和悬浮动效 */
+.paper-card {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16), 0 1.5px 6px rgba(0,0,0,0.10);
+  border-radius: 16px !important;
+  transition: box-shadow 0.25s, transform 0.25s;
+  background: #fff;
+}
+.paper-card:hover, .paper-card:focus {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.22), 0 3px 12px rgba(0,0,0,0.16);
+  transform: translateY(-4px) scale(1.03);
+  z-index: 2;
+}
 /* Base */
 html {
   overflow-x: hidden; }
@@ -260,10 +296,12 @@ h1, h2, h3, h4, h5,
     padding-left: 0;
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active > a {
-      color: #000;
-      display: inline-block;
-      padding-left: 10px;
-      padding-right: 10px; }
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 10px; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block; }
@@ -276,7 +314,9 @@ h1, h2, h3, h4, h5,
         font-size: .8rem;
         letter-spacing: .05rem;
         font-weight: 400;
-        display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
         text-decoration: none !important;
         color: #000; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -1444,7 +1484,8 @@ strong {
     font-style: italic; }
   .card {
     border: none;
-  max-width: 70%;
-  margin: auto;
-  text-align: center;
+    border-radius: 16px !important;
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
 }

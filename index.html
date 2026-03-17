@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>飞行智能社区</title>
+    <title> FlyingIntelligence</title>
     <meta charset="utf-8">
     <meta name="viewport" content="Flying Intelligence">
 
@@ -35,7 +35,10 @@
     <!-- Add Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Add Chart.js Library -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <!-- 统一数据源，必须在所有内联脚本前加载 -->
+    <script src="js/papers-data.js"></script>
+    <script src="js/tag-colors.js"></script>
     <style>
         /* Add the hover effect */
         .social-icons {
@@ -72,24 +75,29 @@
         }
 
         .research-charts-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 40px 40px;
+            justify-items: center;
+            align-items: center;
+            margin: 40px auto 0 auto;
+            max-width: 700px;
         }
 
         .research-chart-item {
             background: #ffffff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 32px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 24px;
             cursor: pointer;
             transition: box-shadow 0.2s, transform 0.2s;
-            flex: 0 0 280px;
+            width: 320px;
+            height: 120px;
+            font-size: 1.25rem;
         }
 
         .research-chart-item:hover {
@@ -99,16 +107,19 @@
 
         .research-chart-canvas-wrapper {
             flex-shrink: 0;
-            width: 60px;
-            height: 60px;
+            width: 90px;
+            height: 90px;
+            position: relative;
+            z-index: 10;
         }
 
         .research-chart-item-title {
-            font-size: 14px;
+            font-size: 1.2em;
             font-weight: bold;
             color: #333;
             margin: 0 0 3px 0;
             line-height: 1.3;
+            text-align: center;
         }
 
         .research-chart-item-subtitle {
@@ -290,12 +301,12 @@
             <div class="container" style="padding:20px">
                 <div class="row align-items-center">
                     <!-- <div class="col-12 col-lg-6 d-flex"> -->
-                    <img src="./TACO_LOGO.png" width="25%" />
+                    <img src="./FlyingIntelligence_LOGO.png" width="25%" />
                     <a class="site-logo" style="margin-left: 390px;">
-                        <div style="font-size: 60px; font-weight: bold;">
+                        <div style="font-size: 60px; font-weight: bold; margin-left: -40px;">
                             <b style="color: rgb(150, 0, 0)"></b>飞行智能社区
                         </div>
-                        <div style="font-size: 40px; margin-left: 47px;">
+                        <div style="font-size: 40px; margin-left: 8px;">
                             <b style="color: rgb(80, 0, 0)"></b>Flying Intelligence
                         </div>
                     </a>
@@ -319,9 +330,9 @@
         </div>
 
 
-        <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block" role="banner">
+        <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block" role="banner" style="margin-left: 66px;">
 
-            <div class="container" style="padding-right=10%">
+            <div class="container" style="padding-right:10%; margin-left: 126px;">
                 <div class="d-flex align-items-right">
                     <!-- <div class="mr-auto">
                     <a href="index.html">
@@ -335,14 +346,11 @@
                                 <li class="active">
                                     <a href="index.html" class="nav-link text-right">Home</a>
                                 </li>
-                                <!--                                <li>-->
+                                <!-- <a href="teaching.html" class=" nav-link text-left">Teaching</a> -->
                                 <!--                                    <a href="research.html"" class=" nav-link text-left">Research</a>-->
                                 <!--                                </li>-->
                                 <li>
-                                    <a href="publication.html" class=" nav-link text-left">Publication</a>
-                                </li>
-                                <li>
-                                    <a href="teaching.html" class=" nav-link text-left">Teaching</a>
+                                    <a href="publication.html" class="nav-link text-left">Publication</a>
                                 </li>
                                 <li>
                                     <a href="group.html" class="nav-link text-left">Group</a>
@@ -405,173 +413,126 @@
 
     <!-- Fingerprint Section -->
     <div class="site-section" style="background: #f8f9fa; padding: 60px 0;">
-        <div class="container">
-            <div class="section-title" style="margin-bottom:30px; text-align: center;">
-                <h2>Fingerprint</h2>
-            </div>
-            <div class="research-charts-wrapper">
-                <div class="research-charts-subtitle" style="text-align: center; margin-bottom: 30px;">Research
-                    direction distribution - Percentage of research focus in each direction</div>
-                <div class="research-charts-grid">
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-ad"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Autonomous Driving</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-mlm"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Multimodal AI & LLMs</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-gm"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Generative Models</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-vqa"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Video Quality Assessment</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-eai"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Embodied AI</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
-                    <div class="research-chart-item">
-                        <div class="research-chart-canvas-wrapper">
-                            <canvas id="chart-other"></canvas>
-                        </div>
-                        <div class="research-chart-info">
-                            <div class="research-chart-item-title">Other Research</div>
-                            <div class="research-chart-item-subtitle">Computer Science</div>
-                        </div>
-                    </div>
+        <div class="site-section" style="background: #f8f9fa; padding: 10px 0 60px 0;">
+            <div class="container" style="margin-top: -50px;">
+                <div class="section-title" style="margin-bottom:30px; text-align: center;">
+                    <h2>Research Direction Distribution</h2>
                 </div>
-                <!-- Shared Dropdown Container -->
-                <div id="researchDropdownContainer" class="research-dropdown-container"></div>
+                <div class="research-charts-wrapper">
+                    <div class="research-charts-subtitle" style="text-align: center; margin-bottom: 30px;">Research
+                        direction distribution - Percentage of research focus in each direction</div>
+                    <div class="research-charts-grid">
+                        <div class="research-chart-item">
+                            <div class="research-chart-canvas-wrapper">
+                                <canvas id="chart-perception" width="90" height="90"></canvas>
+                            </div>
+                            <div class="research-chart-info">
+                                <a href="direction_papers.html?direction=Low-altitude%20Perception"
+                                    style="text-decoration:none;">
+                                    <div class="research-chart-item-title">Low-altitude Perception</div>
+                                </a>
+                                <div id="percent-perception" class="research-chart-percent"
+                                    style="text-align:center;font-size:1.1em;color:#666;font-weight:bold;margin-top:2px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-chart-item">
+                            <div class="research-chart-canvas-wrapper">
+                                <canvas id="chart-maneuver" width="90" height="90"></canvas>
+                            </div>
+                            <div class="research-chart-info">
+                                <a href="direction_papers.html?direction=Low-altitude%20Maneuvering"
+                                    style="text-decoration:none;">
+                                    <div class="research-chart-item-title">Low-altitude Maneuvering</div>
+                                </a>
+                                <div id="percent-maneuver" class="research-chart-percent"
+                                    style="text-align:center;font-size:1.1em;color:#666;font-weight:bold;margin-top:2px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-chart-item">
+                            <div class="research-chart-canvas-wrapper">
+                                <canvas id="chart-control" width="90" height="90"></canvas>
+                            </div>
+                            <div class="research-chart-info">
+                                <a href="direction_papers.html?direction=Low-altitude%20Operation"
+                                    style="text-decoration:none;">
+                                    <div class="research-chart-item-title">Low-altitude Operation</div>
+                                </a>
+                                <div id="percent-control" class="research-chart-percent"
+                                    style="text-align:center;font-size:1.1em;color:#666;font-weight:bold;margin-top:2px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-chart-item">
+                            <div class="research-chart-canvas-wrapper">
+                                <canvas id="chart-coordination" width="90" height="90"></canvas>
+                            </div>
+                            <div class="research-chart-info">
+                                <a href="direction_papers.html?direction=Low-altitude%20Coordination"
+                                    style="text-decoration:none;">
+                                    <div class="research-chart-item-title">Low-altitude Coordination</div>
+                                </a>
+                                <div id="percent-coordination" class="research-chart-percent"
+                                    style="text-align:center;font-size:1.1em;color:#666;font-weight:bold;margin-top:2px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shared Dropdown Container -->
+                    <div id="researchDropdownContainer" class="research-dropdown-container"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Minimal Recent Works section (only this kept below carousel) -->
-    <div class="site-section" style="padding: 40px 0;">
-        <div class="container">
-            <div class="section-title" style="margin-bottom:20px; text-align:center;">
-                <h2>近期科研成果</h2>
+        <!-- Minimal Recent Works section (only this kept below carousel) -->
+        <div class="site-section" style="padding: 40px 0;">
+            <div class="container">
+                <div class="section-title" style="margin-bottom:20px; text-align:center;">
+                    <h2>Recent Research Achievements</h2>
+                </div>
+                <div style="max-width:900px; margin:0 auto; color:rgb(68,68,68);">
+                    <script>
+                        // 只展示论文卡片和标签，不分方向小标题，且每种标签有唯一固定颜色
+                        // 动态渲染 Recent Research Achievements
+                        // 依赖 papers-data.js 和 tag-colors.js
+                        if (typeof papers === 'undefined' || typeof tagColors === 'undefined') {
+                            document.write('<div class="text-danger">Paper data not loaded.</div>');
+                        } else {
+                            papers.forEach(paper => {
+                                document.write(`
+                                    <div class='card h-100 shadow-sm mb-3 paper-card'>
+                                        ${paper.img ? `<img class='card-img-top' src='${paper.img}' alt='${paper.title}' style='height: 275px; object-fit: cover;'>` : ''}
+                                        <div class='card-body d-flex flex-column'>
+                                            <h5 class='card-title'><a href='${paper.url}' target='_blank'>${paper.title}</a></h5>
+                                            ${paper.tags.map(t => `<span class='badge' style='background:${tagColors[t] || '#888'};color:#fff;font-size:1em;margin-bottom:8px;margin-right:4px;'>${t}</span>`).join(' ')}
+                                            <p class='card-text small text-muted mb-0'>${paper.authors}</p>
+                                        </div>
+                                    </div>
+                                `);
+                            });
+                        }
+                    </script>
+                </div>
             </div>
-            <div style="max-width:900px; margin:0 auto; color:rgb(68,68,68);">
+
+            <!-- 历史条目已替换为占位格式，便于后续改写 -->
+            <div style="max-width:900px; margin:10px auto; color:rgb(68,68,68);">
                 <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <div class="card h-100 shadow-sm">
-                            <img class="card-img-top" src="files/images/UAVS.png" alt="UAVs meet LLMs Paper"
-                                style="height: 275px; object-fit: cover;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><a
-                                        href="https://www.sciencedirect.com/science/article/pii/S1566253525002313"
-                                        target="_blank">UAVs meet LLMs: Overviews and perspectives towards agentic
-                                        low-altitude mobility</a></h5>
-                                <p class="card-text small text-muted mb-0">Yonglin Tian, Fei Lin, Yiduo Li, Tengchao
-                                    Zhang, Qiyao Zhang, Xuan Fu, Jun Huang, Xingyuan Dai, Yutong Wang, Chunwei Tian, Bai
-                                    Li, Yisheng Lv, Levente Kovács, Fei-Yue Wang</p>
-                            </div>
-                        </div>
+                    <!-- 静态论文卡片已移除，避免重复展示 -->
+
+                    <div class="section-title" style="margin-bottom:20px">
                     </div>
-                    <div class="col-md-12 mb-3">
-                        <div class="card h-100 shadow-sm">
-                            <img class="card-img-top" src="files/images/CogRail.png" alt="CogRail Paper"
-                                style="height: 350px; object-fit: cover;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2601.09613"
-                                        target="_blank">CogRail: Benchmarking VLMs in Cognitive Intrusion Perception for
-                                        Intelligent Railway Transportation Systems</a></h5>
-                                <p class="card-text small text-muted mb-0">Yonglin Tian, Qiyao Zhang, Wei Xu, Yutong
-                                    Wang, Yihao Wu, Xinyi Li, Xingyuan Dai, Hui Zhang, Zhiyong Cui, Baoqing Guo, Zujun
-                                    Yu, Yisheng Lv</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                        <div class="card h-100 shadow-sm">
-                            <img class="card-img-top" src="files/images/AIR-VLA.png" alt="AIR-VLA Paper"
-                                style="height: 350px; object-fit: cover;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2601.21602"
-                                        target="_blank">AIR-VLA: Vision-Language-Action Systems for Aerial
-                                        Manipulation</a></h5>
-                                <p class="card-text small text-muted mb-0">Jianli Sun, Bin Tian, Qiyao Zhang, Chengxiang
-                                    Li, Zihan Song, Zhiyong Cui, Yisheng Lv, Yonglin Tian</p>
-                            </div>
+                </div>
+                <div class="trend-entry d-flex">
+                    <div class="row justify-content-md-center">
+                        <div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- 历史条目已替换为占位格式，便于后续改写 -->
-        <div style="max-width:900px; margin:10px auto; color:rgb(68,68,68);">
-            <div class="row">
-                <div class="col-md-12 mb-3">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><a href="#" target="_blank">论文1</a><br></h5>
-                            <p class="card-text small text-muted mb-0">作者1，作者2，作者3，作者4，作者5，作者6</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><a href="#" target="_blank">论文2</a></h5>
-                            <p class="card-text small text-muted mb-0">作者2，作者3，作者4，作者5，作者6</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 mb-3">
-                    <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title"><a href="#" target="_blank">论文3</a></h5>
-                            <p class="card-text small text-muted mb-0">作者1，作者2，作者3，作者4，作者5，作者6</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <div class="section-title" style="margin-bottom:20px">
-            <h2>Sponsor</h2>
-        </div>
-    </div>
-    <div class="trend-entry d-flex">
-        <div class="row justify-content-md-center">
-            <div>
-                <img src="./TACO_Sponsor.png" width="100%" />
-            </div>
-        </div>
-    </div>
-    </div>
-
-    </div>
 
 
 
