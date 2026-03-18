@@ -8,6 +8,13 @@ const papers = [
         tags: ["Low-altitude Perception", "Low-altitude Coordination", "Low-altitude Control", "Low-altitude Maneuvering", "Low-altitude Operation"]
     },
     {
+        title: "OpenCOOD-Air: Prompting Heterogeneous Ground-Air Collaborative Perception with Spatial Conversion and Offset Prediction",
+        url: "https://arxiv.org/abs/2603.13919",
+        img: "files/images/opencood-air.png",
+        authors: '<a href="group.html#xianke-wu">Xianke Wu</a>, Songlin Bai, <a href="group.html#chengxiang-li">Chengxiang Li</a>, Zhiyao Luo, Yulin Tian, Fenghua Zhu, Yisheng Lv, <a href="group.html#yonglin-tian">Yonglin Tian</a>',
+        tags: ["Low-altitude Perception"]
+    },
+    {
         title: "CogRail: Benchmarking VLMs in Cognitive Intrusion Perception for Intelligent Railway Transportation Systems",
         url: "https://arxiv.org/abs/2601.09613",
         img: "files/images/CogRail.png",
@@ -27,5 +34,6 @@ const papers = [
         img: "files/images/LogisticsVLN.png",
         authors: '<a href="group.html#xinyuan-zhang">Xinyuan Zhang</a>, <a href="group.html#yonglin-tian">Yonglin Tian</a>, Fei Lin, Yue Liu, Jing Ma, Kornelia S ´ ara Szatm ´ ary, Fei-Yue Wang',
         tags: ["Low-altitude Maneuvering"]
-    }
+    },
+
 ];
