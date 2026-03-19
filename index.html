@@ -448,17 +448,15 @@
                 font-size: 16px;
             }
         }
+
+        /* 论文卡片封面图尺寸设置，避免图片过满 */
+        .paper-card .card-img-top {
+            height: 300px !important;
+            object-fit: cover !important;
+        }
     </style>
 
 </head>
-
-<style>
-    /* 同步 publication.html 的论文卡片封面图尺寸设置，避免首页图片过满 */
-    .paper-card .card-img-top {
-        height: 300px !important;
-        object-fit: cover !important;
-    }
-</style>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -476,7 +474,9 @@
         <div class="header-top">
             <div class="container" style="padding:20px">
                 <div class="row align-items-center">
-                    <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+                    <img src="./FlyingIntelligence_LOGO.png" width="25%" />
+                    <a href="#"
+                        class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
                             class="icon-menu h3"></span></a>
                 </div>
             </div>
@@ -552,96 +552,96 @@
         </div>
     </div>
 
-    <!-- Fingerprint Section -->
+    <!-- Research Direction Distribution Section -->
     <div class="site-section" style="background: #f8f9fa; padding: 60px 0;">
-        <div class="site-section" style="background: #f8f9fa; padding: 10px 0 60px 0;">
-            <div class="container" style="margin-top: -50px;">
-                <div class="section-title" style="margin-bottom:30px; text-align: center;">
-                    <h2>Research Direction Distribution</h2>
-                </div>
-                <div class="research-charts-wrapper">
-                    <div class="research-charts-subtitle" style="text-align: center; margin-bottom: 30px;">Research
-                        direction distribution - Percentage of research focus in each direction</div>
-                    <div class="research-charts-grid">
-                        <div class="research-chart-item">
-                            <div class="research-chart-canvas-wrapper">
-                                <canvas id="chart-perception" width="90" height="90"></canvas>
-                            </div>
-                            <div class="research-chart-info">
-                                <a href="direction_papers.html?direction=Low-altitude%20Perception"
-                                    style="text-decoration:none;">
-                                    <div class="research-chart-item-title">Low-altitude Perception</div>
-                                </a>
-                                <div id="percent-perception" class="research-chart-percent"
-                                    style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
-                                </div>
-                            </div>
+        <div class="container">
+            <div class="section-title" style="margin-bottom:30px; text-align: center;">
+                <h2>Research Direction Distribution</h2>
+            </div>
+            <div class="research-charts-wrapper">
+                <div class="research-charts-subtitle" style="text-align: center; margin-bottom: 30px;">Research
+                    direction distribution - Percentage of research focus in each direction</div>
+                <div class="research-charts-grid">
+                    <div class="research-chart-item">
+                        <div class="research-chart-canvas-wrapper">
+                            <canvas id="chart-perception" width="90" height="90"></canvas>
                         </div>
-                        <div class="research-chart-item">
-                            <div class="research-chart-canvas-wrapper">
-                                <canvas id="chart-maneuver" width="90" height="90"></canvas>
-                            </div>
-                            <div class="research-chart-info">
-                                <a href="direction_papers.html?direction=Low-altitude%20Maneuvering"
-                                    style="text-decoration:none;">
-                                    <div class="research-chart-item-title">Low-altitude Maneuvering</div>
-                                </a>
-                                <div id="percent-maneuver" class="research-chart-percent"
-                                    style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="research-chart-item">
-                            <div class="research-chart-canvas-wrapper">
-                                <canvas id="chart-control" width="90" height="90"></canvas>
-                            </div>
-                            <div class="research-chart-info">
-                                <a href="direction_papers.html?direction=Low-altitude%20Operation"
-                                    style="text-decoration:none;">
-                                    <div class="research-chart-item-title">Low-altitude Operation</div>
-                                </a>
-                                <div id="percent-control" class="research-chart-percent"
-                                    style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="research-chart-item">
-                            <div class="research-chart-canvas-wrapper">
-                                <canvas id="chart-coordination" width="90" height="90"></canvas>
-                            </div>
-                            <div class="research-chart-info">
-                                <a href="direction_papers.html?direction=Low-altitude%20Coordination"
-                                    style="text-decoration:none;">
-                                    <div class="research-chart-item-title">Low-altitude Coordination</div>
-                                </a>
-                                <div id="percent-coordination" class="research-chart-percent"
-                                    style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
-                                </div>
+                        <div class="research-chart-info">
+                            <a href="direction_papers.html?direction=Low-altitude%20Perception"
+                                style="text-decoration:none;">
+                                <div class="research-chart-item-title">Low-altitude Perception</div>
+                            </a>
+                            <div id="percent-perception" class="research-chart-percent"
+                                style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
                             </div>
                         </div>
                     </div>
-                    <!-- Shared Dropdown Container -->
-                    <div id="researchDropdownContainer" class="research-dropdown-container"></div>
+                    <div class="research-chart-item">
+                        <div class="research-chart-canvas-wrapper">
+                            <canvas id="chart-maneuver" width="90" height="90"></canvas>
+                        </div>
+                        <div class="research-chart-info">
+                            <a href="direction_papers.html?direction=Low-altitude%20Maneuvering"
+                                style="text-decoration:none;">
+                                <div class="research-chart-item-title">Low-altitude Maneuvering</div>
+                            </a>
+                            <div id="percent-maneuver" class="research-chart-percent"
+                                style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-chart-item">
+                        <div class="research-chart-canvas-wrapper">
+                            <canvas id="chart-control" width="90" height="90"></canvas>
+                        </div>
+                        <div class="research-chart-info">
+                            <a href="direction_papers.html?direction=Low-altitude%20Operation"
+                                style="text-decoration:none;">
+                                <div class="research-chart-item-title">Low-altitude Operation</div>
+                            </a>
+                            <div id="percent-control" class="research-chart-percent"
+                                style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-chart-item">
+                        <div class="research-chart-canvas-wrapper">
+                            <canvas id="chart-coordination" width="90" height="90"></canvas>
+                        </div>
+                        <div class="research-chart-info">
+                            <a href="direction_papers.html?direction=Low-altitude%20Coordination"
+                                style="text-decoration:none;">
+                                <div class="research-chart-item-title">Low-altitude Coordination</div>
+                            </a>
+                            <div id="percent-coordination" class="research-chart-percent"
+                                style="text-align:center;font-size:1.0em;color:#666;font-weight:bold;margin-top:2px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Shared Dropdown Container -->
+                <div id="researchDropdownContainer" class="research-dropdown-container"></div>
             </div>
         </div>
+    </div>
+    </div>
 
-        <!-- Minimal Recent Works section (only this kept below carousel) -->
-        <div class="site-section" style="padding: 40px 0;">
-            <div class="container">
-                <div class="section-title" style="margin-bottom:20px; text-align:center;">
-                    <h2>Recent Research Achievements</h2>
-                </div>
-                <div style="max-width:900px; margin:0 auto; color:rgb(68,68,68);">
-                    <script>
-                        // 只展示论文卡片和标签，不分方向小标题，且每种标签有唯一固定颜色
-                        // 动态渲染 Recent Research Achievements
-                        // 依赖 papers-data.js 和 tag-colors.js
-                        if (typeof papers === 'undefined' || typeof tagColors === 'undefined') {
-                            document.write('<div class="text-danger">Paper data not loaded.</div>');
-                        } else {
-                            papers.forEach(paper => {
-                                document.write(`
+    <!-- Recent Research Achievements Section -->
+    <div class="site-section" style="padding: 40px 0;">
+        <div class="container">
+            <div class="section-title" style="margin-bottom:20px; text-align:center;">
+                <h2>Recent Research Achievements</h2>
+            </div>
+            <div style="max-width:900px; margin:0 auto; color:rgb(68,68,68);">
+                <script>
+                    // 只展示论文卡片和标签，不分方向小标题，且每种标签有唯一固定颜色
+                    // 动态渲染 Recent Research Achievements
+                    // 依赖 papers-data.js 和 tag-colors.js
+                    if (typeof papers === 'undefined' || typeof tagColors === 'undefined') {
+                        document.write('<div class="text-danger">Paper data not loaded.</div>');
+                    } else {
+                        papers.forEach(paper => {
+                            document.write(`
                                     <div class='card h-100 shadow-sm mb-3 paper-card'>
                                         ${paper.img ? `<img class='card-img-top' src='${paper.img}' alt='${paper.title}' style='height: 275px; object-fit: cover;'>` : ''}
                                         <div class='card-body d-flex flex-column'>
@@ -651,42 +651,14 @@
                                         </div>
                                     </div>
                                 `);
-                            });
-                        }
-                    </script>
-                </div>
+                        });
+                    }
+                </script>
             </div>
-
-            <!-- 历史条目已替换为占位格式，便于后续改写 -->
-            <div style="max-width:900px; margin:10px auto; color:rgb(68,68,68);">
-                <div class="row">
-                    <!-- 静态论文卡片已移除，避免重复展示 -->
-
-                    <div class="section-title" style="margin-bottom:20px">
-                    </div>
-                </div>
-                <div class="trend-entry d-flex">
-                    <div class="row justify-content-md-center">
-                        <div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-
-
-
-
-    </div>
-
     </div>
 
 
-
-
-
-    <!-- END section -->
 
 
 
@@ -713,21 +685,6 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 
-
-
-    <!--    </div>-->
-    <!-- .site-wrap -->
-
-
-    <!-- loader -->
-    <!-- <div id="loader" class="show fullscreen">
-    <svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#ff5e15"/>
-    </svg>
-</div> -->
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -745,9 +702,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/research-chart.js"></script>
-
-    <!-- Twitter Timeline Widget -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
 
