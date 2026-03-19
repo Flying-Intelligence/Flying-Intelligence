@@ -87,7 +87,7 @@
 
         .research-chart-item {
             background: #ffffff;
-            padding: 32px 24px;
+            padding: 32px 45px 32px 24px;
             border-radius: 16px;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
             display: flex;
@@ -98,11 +98,28 @@
             width: 320px;
             height: 120px;
             font-size: 1.25rem;
+            position: relative;
+        }
+
+        .research-chart-item::after {
+            content: '→';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(12px);
+            font-size: 1.5em;
+            color: #8c0000;
+            font-weight: bold;
+            transition: transform 0.2s;
         }
 
         .research-chart-item:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .research-chart-item:hover::after {
+            transform: translateY(12px) translateX(5px);
         }
 
         .research-chart-canvas-wrapper {
