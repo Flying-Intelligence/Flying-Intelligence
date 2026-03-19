@@ -1,0 +1,96 @@
+/* Stanford-Style Navigation - Shared Navbar Styles */
+
+.header-top {
+    display: none;
+}
+
+.site-navbar {
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 0 !important;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.site-navbar .container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 2rem !important;
+    gap: 1.5rem;
+}
+
+.site-navbar .logo {
+    flex-shrink: 0;
+    height: 100px;
+}
+
+.site-navbar .logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.site-navbar .logo a {
+    display: block;
+    height: 100%;
+}
+
+.site-navbar .site-navigation {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+}
+
+.site-navbar .site-menu {
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navbar .site-menu li {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.site-navbar .site-menu .nav-link {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #333 !important;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none !important;
+    display: block;
+    white-space: nowrap;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+.site-navbar .site-menu li.active .nav-link {
+    color: #333 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+    .site-navbar {
+        display: none;
+    }
+
+    .header-top {
+        display: block;
+    }
+}
